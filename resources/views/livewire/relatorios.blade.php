@@ -32,11 +32,6 @@
                             <label for="dt_fim">Data de fim</label>
                             <input type="date" wire:model="dt_fim" id="dt_fim" class="form-control">
                         </div>
-                        <div class="col-md-3">
-                            <button type="submit" class="btn btn-md btn-primary btn-margin-top">
-                                <i class="fa fa-filter"></i>
-                            </button>
-                        </div>
                     </div>
                 </div>
         </form>
@@ -49,7 +44,7 @@
                     Imprimir
                 </button>
             </div>
-            <table class="table table-bordered table-hover  text-center table-width">
+            <table class="table table-bordered table-hover  text-center">
                 <thead>
                     <tr>
                         <th>Data</th>
@@ -77,12 +72,15 @@
                                 <td>{{$item->nome}}</td>
                             </tr>
                         @endforeach
+                        @else
+                        <tr class="text-center">
+                            <td colspan="8">Nenhum resultado foi encontrado...</td>
+                        </tr>
                     @endif
                 </tbody>
             </table>
         </div>
-        @else
-            <p class="text-center">Nenhum dado foi encontrado...</p>
+
         @endif
         </div>
         <div class="card-footer">
