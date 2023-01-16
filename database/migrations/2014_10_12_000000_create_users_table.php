@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('phone',15)->nullable();
-            $table->string('position',15);
+            $table->string('position',255);
             $table->string('photo')->nullable();
             $table->enum('profile',['admin','convidado'])->default('convidado');
             $table->enum('esta_desponivel',['sim','nao'])->default('sim');

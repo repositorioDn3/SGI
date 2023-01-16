@@ -10,6 +10,7 @@ use App\Http\Livewire\Empresas;
 use App\Http\Livewire\Imoveis;
 use App\Http\Livewire\Permissoes;
 use App\Http\Livewire\Pessoas;
+use App\Http\Livewire\Relatorios;
 use App\Http\Livewire\Utilizadores;
 use App\Http\Livewire\Vendas;
 use Illuminate\Support\Facades\Route;
@@ -67,5 +68,6 @@ Route::get('/utilizadores',Utilizadores::class)->name('admin.utilizadores')->mid
 Route::get('/permissoes',Permissoes::class)->name('utilizador.permissao')->middleware(['auth']); // componente Vendas
 Route::get('/empresa',Empresas::class)->name('empresa')->middleware(['auth']); // componente Vendas
 Route::get('/contas/bancarias',ContasBancaria::class)->name('contas.bancaria')->middleware(['auth']); // componente Vendas
+Route::get('/relatorios',Relatorios::class)->name('relatorios')->middleware(['auth']); // componente Vendas
 
 

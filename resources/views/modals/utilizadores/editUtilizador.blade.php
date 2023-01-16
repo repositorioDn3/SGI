@@ -14,7 +14,7 @@
           <form wire:submit.prevent='update' enctype="multipart/form-data" class="col-md-12 d-flex justify-content-between align-items-center flex-wrap" >
             @csrf
             <div class="col-md-12 d-flex justify-content-center align-items-center flex-wrap">
-              
+
               <div class="col-md-6">
                 <label for="">Nome:</label>
                 <input type="text" wire:model='name' class="form-control" placeholder="Nome do utilizador">
@@ -44,13 +44,7 @@
                 @enderror
               </div>
               <input type="hidden" wire:model="utilizador_id" id="utilizador_id">
-          
-         
         </div>
-          
-          
-          
-      
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-info">

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{asset('/plugins/daterangepicker/daterangepicker.css')}}">
     <link rel="stylesheet" href="{{asset('/plugins/summernote/summernote-bs4.min.css')}}">
     <link rel="stylesheet" href="{{asset('dist/css/sweetalert2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('dist/css/style.css')}}">
     @livewireStyles
 </head>
 
@@ -156,6 +157,30 @@
                 <a href="{{route('utilizador.permissao')}}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Permissões</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="fas fa-chart-pie"></i>
+              <p>
+               Relatorios
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('relatorios')}}" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Vendas</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('utilizador.permissao')}}" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Imóveis</p>
                 </a>
               </li>
             </ul>
